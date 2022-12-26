@@ -1,0 +1,79 @@
+h1 {
+    border: 2px #eee solid;
+    color: #e71099;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+.glav h2{
+    border: 2px #eee solid;
+    color: #0f8ea9;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+html, body {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.wrap{
+    justify-content: center;
+    display: flex;
+}
+.wrap>.card{
+    max-width: 800px;
+    margin: 20px;
+    justify-content: center;
+    flex-basis: 30%;
+}
+
+/* CSS для страницы регистрации */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/* ----------------------------------------- */
+.flash {padding:10px;}
+.flash.success{
+border: 2px solid #21DB56;
+background: #AEFFC5;
+}
+.flash.error {
+border: 5px solid #FF4343;
+background: #FF9C9C;
+}

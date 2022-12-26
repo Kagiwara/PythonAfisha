@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title> О веб приложении </title>
+    {% endif %}
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index')}}">AfishaSite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="newfilm">Новые Фильмы</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="filmlist">Список Фильмов</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="login">Профиль</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="CreateFilm">Добавить фильм</a>
+            </li>
+            </ul>
+        </div>
+	</nav>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="wrap">
+        <div class="card" style="width: 20rem;">
+    <img src="https://kinofilmpro.ru/wp-content/uploads/2021/05/mstiteli-scaled.jpg" class="card-img-top" alt="1">
+    <div class="card-body">
+        <h5 class="card-title">Thor: Love and Thunder</h5>
+        <p class="card-text">Год производства: 2022 <br> Страна: Австралия, США <br>
+                    Жанр: фантастика, фэнтези, боевик, мелодрама, комедия, приключения <br>
+                    Слоган: «Not every god has a plan» <br>
+                    Режиссер: Тайка Вайтити<br>
+                    Сценарий: Дженн Робинсон, Стэн Ли, Джейсон Аарон<br>
+                    Продюсер: Виктория Алонсо, Брайан Чапек, Луис Д’Эспозито<br>
+                    Оператор: Барри Баз Идойн<br>
+                    Композитор: Майкл Джаккино, Нами Мелумад<br>
+                    Художник: Найджел Фелпс, Влад Бина, Эндрю Чан<br>
+                    Монтаж: Питер С. Эллиот, Тим Рош, Мэттью Шмидт</p>
+    </div>
+  </div>
+        <div class="card" style="width: 20rem;">
+    <img src="https://avatars.mds.yandex.net/i?id=7a54b0a6326c2264451fc38712b36640b1997a23-8350343-images-thumbs&n=13&exp=1" class="card-img-top" alt="2">
+    <div class="card-body">
+        <h5 class="card-title">Фантастические твари 3. Тайны Дамблдора</h5>
+        <p class="card-text">Год выхода: 2022 <br>
+            Страна: Великобритания, США <br>
+            Жанр: фэнтези, приключения, семейный <br>
+            Режиссер: Дэвид Йейтс <br>
+            Актеры: Эдди Редмэйн, Джуд Лоу, Эзра Миллер, Дэн Фоглер, Элисон Судол</p>
+    </div>
+  </div>
+        <div class="card" style="width: 20rem;">
+      <div class="card-body">
+      <img src="https://www.film.ru/sites/default/files/movies/posters/49758481-2195547.jpg" class="card-img-top" alt="3">
+          <h5 class="card-title">Нет(No)</h5>
+          <p class="card-text">Год выхода: 2022<br>
+                    Страна: США, Япония<br>
+                    Жанр: ужасы, фантастика, триллер, детектив<br>
+                    Режиссер: Джордан Пил<br>
+                    Актеры: Дэниэл Калуя, Кеке Палмер, Стивен Ян, Брэндон Переа</p>
+      </div>
+  </div>
+    </div>
+</body>
